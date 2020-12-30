@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: #fffffe;
+    color: aliceblue;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+    display: block;
+    max-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul {
+    list-style-type: none;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+    background: url("./img/bg.jpg");
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header img {
+    width: 200px;
+}
+
+.search-field {
+    display: grid;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 25px;
+
+}
+
+.search-field {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.search-field input {
+    font-size: 0.8em;
+    padding: 1em;
+    border-radius: 300000px;
+    outline: none;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    cursor: pointer;
+    height: 230px;
+    background-color: #0f0e17;
+    color: #a7a9be;
+    border-radius: 5px;
+    -webkit-box-shadow: -2px 3px 10px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 3px 10px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 3px 10px -4px rgba(0, 0, 0, 0.75);
+}
+
+.card img {
+    height: 180px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.content li {
+    padding: 0.2em 0;
+    font-size: 1.3rem;
 }
