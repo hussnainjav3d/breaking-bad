@@ -96,3 +96,22 @@ header img {
     padding: 0.2em 0;
     font-size: 1.3rem;
 }
+
+@media screen and (max-width: 960px) {
+    .container {
+        width: 85%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
