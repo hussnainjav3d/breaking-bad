@@ -108,10 +108,26 @@ header img {
 
     .card {
         grid-template-columns: 1fr 1fr;
-        width: auto;
+        /* width: auto; */
+        /* height: auto; */
     }
 
     .card img {
         width: 100%;
+        /* height: auto; */
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .card {
+        height: auto;
+    }
+
+    .card img {
+        padding: 0.5rem;
+    }
+
+    .content li {
+        font-size: 0.8rem;
     }
 }
